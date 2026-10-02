@@ -57,7 +57,7 @@ export default function CardapioAdmin() {
         try {
 
             const response = await fetch(
-                `http://localhost:3001/produtos/${id}`,
+                `${process.env.API_URL}/produtos/${id}`,
                 {
                     method: "DELETE",
                 }
